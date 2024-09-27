@@ -1,0 +1,22 @@
+\mychapter{Marco Teórico}
+\label{Cap:MarcoTeorico}
+
+O Capítulo \ref{Cap:MarcoTeorico} apresenta os principais conceitos teóricos que embasam o desenvolvimento da plataforma DDR, focando na reconciliação de dados por meio do método dos multiplicadores de Lagrange e na utilização de tecnologias \textit{web} no contexto da automação industrial.
+
+\section{Reconciliação de Dados e o Método dos Multiplicadores de Lagrange}
+
+A \textit{reconciliação de dados} é uma técnica essencial para garantir a consistência e a precisão das informações coletadas por sensores em processos industriais \cite{datarecshakar}. Esse método visa minimizar os erros sistemáticos e aleatórios que comumente afetam as medições industriais, corrigindo as inconsistências nos dados coletados \cite{datarecragnoli}. A reconciliação de dados assegura que os resultados obtidos respeitem as leis de conservação, como a conservação de massa e energia, o que é crucial para a operação otimizada de plantas industriais \cite{balancecontrol}.
+
+O DDR utiliza o \textit{método dos multiplicadores de Lagrange} como base para seu sistema de reconciliação de dados \cite{optimizationlagrange1982}. Esse método matemático é amplamente empregado para resolver problemas de otimização multivariável com restrições, ajustando os valores medidos de modo a atender a equações de balanço \cite{computecontrol}. Em um contexto industrial, a aplicação dos multiplicadores de Lagrange permite que os dados reconciliados estejam em conformidade com as leis físicas, minimizando desvios nas medições e proporcionando resultados mais confiáveis para processos críticos \cite{danielhoduin}. Essa técnica oferece uma solução robusta, garantindo que as indústrias operem com dados precisos e consistentes, o que é vital para processos de otimização e controle \cite{reformulationdatarecon}.
+
+\section{Tecnologias \textit{Web} no Contexto da Automação Industrial}
+
+A automação industrial moderna depende de tecnologias que permitem a integração de dados e o monitoramento em tempo real. O DDR foi projetado utilizando tecnologias \textit{web} avançadas que tornam a plataforma escalável e acessível de forma remota, atendendo às exigências da \textit{Indústria 4.0} \cite{webusage}. 
+
+No \textit{front-end}, a escolha de \textbf{React.js} proporciona uma interface de usuário altamente responsiva, capaz de atualizar automaticamente as informações recebidas em tempo real. Essa tecnologia oferece uma experiência de uso eficiente e intuitiva, necessária para lidar com os fluxos de dados contínuos que são comuns em ambientes industriais \cite{reactjs}. A interatividade e reatividade proporcionadas por essa tecnologia tornam a plataforma ideal para o monitoramento e controle visual de processos industriais \cite{eloquentjavascript}.
+
+No \textit{back-end}, a escolha do \textbf{Python} como linguagem de desenvolvimento se deve à sua robustez e capacidade de lidar com grandes volumes de dados de forma eficiente \cite{databasesql}. O uso de bibliotecas como \textbf{AsyncIO} e \textbf{FastAPI} permite que o \textit{back-end} do DDR processe dados de forma assíncrona, oferecendo suporte para múltiplas fontes de dados e garantindo a escalabilidade do sistema \cite{backenddevroles}. Essa arquitetura assíncrona é fundamental para manter a integridade dos dados em tempo real sem comprometer o desempenho do sistema \cite{industrydigital}.
+
+Para a visualização dos fluxos de dados e a modelagem dos processos industriais, o DDR incorpora a biblioteca \textbf{ReactFlow}. Essa ferramenta permite a criação de diagramas interativos que facilitam a compreensão dos fluxos de materiais e a identificação de anomalias, padrões ou falhas nos processos industriais \cite{graph}. A visualização clara e interativa dos dados é essencial para que operadores e engenheiros tomem decisões rápidas e informadas, otimizando os processos produtivos.
+
+Assim, o DDR se posiciona como uma solução alinhada às demandas da \textit{Indústria 4.0}, integrando tecnologias \textit{web} modernas com técnicas avançadas de reconciliação de dados, oferecendo às indústrias brasileiras uma ferramenta poderosa para automação e otimização de processos \cite{industry4status}.

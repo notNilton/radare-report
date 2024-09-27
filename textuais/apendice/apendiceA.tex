@@ -1,0 +1,86 @@
+%%
+%% Apêndice
+%%
+
+\mychapter{Tabelas Completas}
+\label{Cap:apendiceA}
+
+Todas as tabelas que são grandes demais para serem incluídas no texto estão apresentadas neste apêndice.
+
+\section{Tabela de requisitos funcionais}
+
+\begin{longtable}{| p{.15\textwidth} | p{.40\textwidth} | p{.15\textwidth} |  p{.15\textwidth} |} \hline
+\textbf{Identificador} & 
+\textbf{Descrição} & 
+\textbf{Prioridade} & 
+\textbf{Requisitos Relacionados} \\ \hline
+RF01 & 
+O sistema deve permitir que os usuários modelarem a dinâmica dos sensores presentes em uma planta industrial. & 
+Alta & 
+RF02 \\ \hline
+RF02 &
+Os usuários devem ser capazes de alimentar o sistema com os dados gerados pelos sensores. &
+Alta &
+RF01 \\ \hline
+RF03 & 
+O sistema deve oferecer uma interface de usuário intuitiva e acessível. 
+& Média 
+& - \\ \hline
+RF04 & 
+O sistema deve realizar cálculos de reconciliação de dados de forma ágil e rápida. & 
+Alta & 
+RF01, RF02 \\ \hline
+RF05 & 
+O sistema deve garantir a compatibilidade de dados, mesmo com formatos heterogêneos. & 
+Alta & 
+RF01, RF02, RF03 \\ \hline
+RF06 & 
+Os usuários devem poder exportar os resultados da reconciliação de dados para diferentes formatos de arquivo. & 
+Média &
+RF01, RF02, RF03, RF04, RF05 \\ \hline
+RF07 & 
+O sistema deve permitir aos usuários configurar alertas para notificar sobre eventos importantes relacionados aos dados dos sensores. & 
+Alta & 
+RF01, RF02 \\ \hline
+RF08 
+& O sistema deve fornecer funcionalidades de visualização de dados em tempo real, incluindo gráficos e relatórios personalizáveis. &
+Alta &
+RF02, RF05 \\ \hline
+RF09 & 
+O sistema deve permitir a integração com outros sistemas de monitoramento industrial, facilitando a troca de dados e informações. & 
+Alta & 
+RF05, RF06 \\ \hline
+\caption{Tabela completa dos requisitos funcionais do \textit{software}.}
+\label{tab:apendice_req_funcionais}
+\end{longtable}
+
+\section{Tabela de requisitos não funcionais}
+
+\begin{longtable}
+{| p{.15\textwidth} | p{.55\textwidth} | p{.15\textwidth} |} 
+    \hline
+    \textbf{Identificador} & \textbf{Descrição} & \textbf{Prioridade} \\
+    \hline
+    RNF01 & O sistema deve ser altamente escalável para lidar com um grande volume de dados de sensores. & Alta \\
+    \hline
+    RNF02 & A segurança dos dados deve ser uma prioridade, garantindo proteção contra acesso não autorizado e manipulação indevida. & Alta \\
+    \hline
+    RNF03 & O desempenho do sistema deve ser otimizado para garantir tempos de resposta rápidos, mesmo em momentos de pico de uso. & Alta \\
+    \hline
+    RNF04 & O sistema deve ser facilmente configurável e customizável para atender às necessidades específicas de diferentes ambientes industriais. & Média \\
+    \hline
+    RNF05 & A manutenibilidade do sistema deve ser uma consideração fundamental, facilitando atualizações, correções de bugs e modificações futuras. & Média \\
+    \hline
+    RNF06 & A usabilidade do sistema deve ser intuitiva, permitindo uma curva de aprendizado mínima para os usuários. & Média \\
+    \hline
+    RNF07 & O sistema deve ser compatível com diferentes navegadores, garantindo sua acessibilidade em uma variedade de ambientes de implantação. & Alta \\
+    \hline
+    RNF8 & O sistema deve estar em conformidade com regulamentações de privacidade de dados, como GDPR, garantindo o tratamento adequado e a proteção das informações pessoais dos usuários. & Alta \\
+    \hline
+    RNF9 & A tolerância a falhas do sistema deve ser implementada, garantindo a continuidade das operações mesmo em caso de falhas de componentes individuais. & Alta \\
+    \hline
+    RNF10 & O tempo de resposta do sistema deve ser consistente e previsível, independentemente da carga de trabalho ou do número de usuários simultâneos. & Média \\
+    \hline
+\caption{Tabela de Requisitos Não Funcionais} % needs to go inside longtable environment
+\label{tab:apendice_req__naofuncionais}
+\end{longtable}
